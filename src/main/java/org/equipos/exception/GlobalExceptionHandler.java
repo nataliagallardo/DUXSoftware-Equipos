@@ -27,10 +27,5 @@ public class GlobalExceptionHandler {
     return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
         .body(new ErrorResponse("Autenticación fallida", 401));
   }
-
-//  @ExceptionHandler(MethodArgumentNotValidException.class) TODO: ver si dejo
-//  public ResponseEntity<ErrorResponse> handleValidation(MethodArgumentNotValidException ex) {
-//    return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-//        .body(new ErrorResponse("La solicitud es invalida", 400));
-//  }
+  
 }
